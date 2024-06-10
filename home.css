@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --primary-color:  #ADD8E6;
+    --text-dark: black;
+    --text-light :grey;
+    --white : white;
+    max-width: 1280px;
+}
+
+*{
+    padding: 0px;
+    margin: 0%;
+    box-sizing: border-box;
+    background: url();
+}
+
+img{
+    display: flex;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+body{
+    font-family: "poppins" , sans-serif;
+}
+nav{
+    max-width: var(max-width);
+    margin-inline: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rm  1rem;
+    border-bottom: 2px solid var(--text-light);
+    background-color: white;
+}
+.nav_logo{
+    
+    display: flex;
+    align-items: center;
+    
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+.nav_logo div{ 
+    width: 80px;
+    aspect-ratio: 1;
+    font-size: 1.3rem;
+    display: grid;
+    place-content: center;
+    background-color:transparent;
+    font-weight: 900;
+}
+.nav_socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: transparent;
+}
+.nav_socials a{
+    color: var(--text-dark);
+    display: flex;
+    align-items: center;
+}
+.nav_socials a:hover{
+    color: pink;
+    text-decoration: underline;
+}
+.nav_contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+}
+.nav_contact_card{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav_contact_card p{
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: .9rem;
+    font-weight: 600;
+    color: var(--text-light);
+}
+.nav_contact_card h4{
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.header_container{
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.header_image_container{
+    position: relative;
+    min-height: 500px;
+    background-image: url(hotel.jpg);
+    
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+}
+
+.header_content{
+    max-width: 600px;
+    padding: 5rem 2rem;
+}
+.header_content h1{
+    margin-bottom: 1rem;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    font-weight: 600;
+    color: white;
+   
+
+}
+.header_content a{
+    color: white;
+}
+
+.row{
+    width: 80%;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    grid-gap: 50px;
+    overflow-x: hidden;
+    padding: 2rem 0rem;
+}
+.row .imgwrapper{
+    overflow-x:hidden ;
+    padding: 0rem 2rem 0rem;
+}
+.row .imgwrapper img{
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    object-fit: cover;
+    transition: 2s;
+    
+}
+.contentwrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left:30px ;
+}
+
+.row1{
+    width: 100%;
+    max-width: 1170px;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 100px;
+    overflow-x: hidden;
+    padding: 2rem 0rem;
+}
+.row1 .imgwrapper1{
+    overflow-x:hidden ;
+    float:inline-end;
+    max-height: 300px;
+    
+}
+
+.row1 .imgwrapper1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    object-fit: cover;
+     
+    
+    
+}
+.contentwrapper1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 0rem 0rem 7rem;
+    margin-bottom: 3rem;
+}
+.top_head{
+    background-color: grey;
+    display: flex;
+}
+.head{
+    font-size: medium;
+    
+}
+.head div{
+    font-weight: 600;
+    padding: 2rem 3rem 2rem 4rem;
+    color: white;
+    font-weight: 600;
+}
+.top_head a{
+    list-style: none;
+    padding: 0rem 3rem 2rem 5rem;
+    display: grid;
+    color: white;
+
+}
+.socials{
+    padding: 2rem 0rem 2rem 40rem;
+    color: white;
+}
+.top_head2 div{
+    font-weight: 600;
+    padding: 0rem 5rem;
+}
+.social ul{
+    list-style: none; 
+    padding: 1rem 5rem;
+    
+    
+    
+
+}
+
+
+
+@media (width > 540px){
+    .nav_contact{
+        gap: 1rem;
+    }
+    .nav_contact_card{
+        gap: 1rem;
+    }
+}
+
+@media (width > 768px){
+    nav{
+        padding: 0rem 1rem;
+        flex-direction: row;
+    }
+    .nav_logo{
+        flex: 0.1;
+        justify-content: flex-start;
+    }
+}
